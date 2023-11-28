@@ -1,0 +1,42 @@
+p {
+    font-family: Candara, serif;
+    font-weight: bolder;
+    font-size: 40px;
+
+}
+
+p.flag {
+    color: aliceblue;
+}
+
+.flag {
+    width: 900px;
+    height: 600px;
+    background-color: darkred;
+}
+
+div,div {
+    display: flex;
+    background-color: #002868;
+    height: 300px;
+    width: 100%;
+}
+
+div > div > div {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+
+div > div > div > p {
+    /* Your styles here */
+    color: red;
+    position: relative;
+    margin-left: 25%;
+    margin-top: 50%;
+}
+
+
+
