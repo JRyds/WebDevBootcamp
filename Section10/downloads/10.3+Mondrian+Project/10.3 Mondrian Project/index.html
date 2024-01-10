@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    #wall {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(wall.jpg);
+      height: 100vh;
+    }
+
+    #canvas {
+      display: grid;
+      background-color: black;
+      height: 30rem;
+      width: 30rem;
+      grid-template-columns: repeat(12, 1fr); /* Creates 4 columns with equal width */
+      grid-template-rows: repeat(24, 1fr);
+      gap: .5rem;
+
+    }
+
+    #red {
+      grid-area: 1 / 1 / 13 / 6;
+      background-color: #E72F24;
+    }
+
+    #right-white {
+      grid-area: 1 / 6 / 13 / 13;
+      background-color: ghostwhite;
+    }
+
+    #left-white {
+      grid-area: 13 / 1 / 24 / 6;
+      background-color: ghostwhite;
+    }
+
+    #bottom-left-white {
+      grid-area: 24 / 1 / 25 / 6;
+      background-color: ghostwhite;
+    }
+
+    #yellow {
+      grid-area: 24 / 6 / 25 / 10;
+      background-color: yellow;
+    }
+
+    #grey {
+      grid-area: 24 / 10 / 25 / 12;
+      background-color: #0a0a0a;
+    }
+
+    #blue {
+      grid-area: 13 / 12 / 17 / 13;
+      background-color: darkblue;
+    }
+
+    #bottom-right-white {
+      grid-area: 18 / 12 / 25 / 13;
+      background-color: ghostwhite;
+    }
+
+    #mid-right-white {
+      grid-area: 13 / 6 / 24 / 12;
+      background-color: ghostwhite;
+    }
+
+
+
+
+  </style>
+
+
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+
+<div id="wall">
+
+  <div id="canvas">
+
+    <div id="red">    </div>
+    <div id="right-white"></div>
+    <div id="left-white"></div>
+    <div id="bottom-left-white"></div>
+    <div id="yellow"></div>
+    <div id="grey"></div>
+    <div id="blue"></div>
+    <div id="bottom-right-white"></div>
+    <div id="mid-right-white"></div>
+
+
+
+  </div>
+
+
+</div>
+
+</body>
+
+</html>
